@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1060.0" style="-fx-background-color: #212E3B;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="view" fitHeight="900.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="25.0" top="25.0" />
+         </HBox.margin></ImageView>
+      <VBox prefHeight="900.0" prefWidth="300.0" spacing="20.0" style="-fx-background-color: #212E3B;">
+         <children>
+            <GridPane alignment="CENTER" prefWidth="300.0" style="-fx-background-insets: 0; -fx-background-color: #364F6B; -fx-background-radius: 15 15 0 0;">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints prefHeight="180.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="initialValuesLabel" alignment="CENTER" text="Initial Values" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <GridPane prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: #405B7A; -fx-background-insets: 0;" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="120.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                      <ColumnConstraints fillWidth="false" halignment="LEFT" maxWidth="182.0" minWidth="10.0" prefWidth="182.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="70.0" valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="70.0" valignment="CENTER" vgrow="ALWAYS" />
+                      <RowConstraints prefHeight="70.0" valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="70.0" valignment="CENTER" vgrow="ALWAYS" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" layoutX="41.0" layoutY="45.0" prefHeight="35.0" prefWidth="107.0" text="Position" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <children>
+                              <TextField fx:id="initialX" alignment="CENTER" focusTraversable="false" maxWidth="60.0" prefHeight="27.0" prefWidth="60.0" text="3000">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                              <TextField fx:id="initialY" alignment="CENTER" focusTraversable="false" maxWidth="60.0" prefHeight="27.0" prefWidth="60.0" text="5000">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="107.0" text="Angle" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="initialAngle" alignment="CENTER" focusTraversable="false" maxWidth="45.0" prefHeight="27.0" prefWidth="60.0" text="90" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="48.0" prefHeight="35.0" prefWidth="107.0" text="RotateBy" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="rotateBy" alignment="CENTER" focusTraversable="false" layoutX="129.0" layoutY="52.0" maxWidth="45.0" prefHeight="27.0" prefWidth="45.0" text="25" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="107.0" text="Command" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="initialCommand" alignment="CENTER" focusTraversable="false" layoutX="129.0" layoutY="46.0" maxWidth="45.0" prefHeight="27.0" prefWidth="45.0" text="X" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane style="-fx-background-color: #364F6B;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="presetsTitle" text="Presets" textFill="WHITE" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="presets" mnemonicParsing="false" text="Choose Preset" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" />
+                     </GridPane.margin>
+                  </MenuButton>
+               </children>
+            </GridPane>
+            <GridPane style="-fx-background-color: #364F6B;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="65.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="rulesTitle" text="Rules" textFill="WHITE" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <children>
+                        <TextField fx:id="fromField" alignment="CENTER" focusTraversable="false" maxWidth="45.0" prefHeight="27.0" prefWidth="45.0" text="F">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fx:id="arrowView" fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../../resources/arrow.png" />
+                           </image></ImageView>
+                        <TextField fx:id="toField" alignment="CENTER" focusTraversable="false" maxWidth="60.0" prefHeight="27.0" prefWidth="60.0" text="FF">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <Button fx:id="addRule" alignment="CENTER" defaultButton="true" minHeight="27.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" style="-fx-background-radius: 10;" text="Add Rule" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft YaHei Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children></HBox>
+                  <ListView fx:id="ruleList" editable="true" maxWidth="270.0" prefHeight="200.0" prefWidth="150.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane alignment="CENTER" prefWidth="300.0" style="-fx-background-insets: 0; -fx-background-color: #364F6B; -fx-background-radius: 0 0 15 15;">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints prefHeight="135.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="80.0" minHeight="65.0" prefHeight="70.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="generationOptions" alignment="CENTER" text="Generation options" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <GridPane prefHeight="112.5" prefWidth="300.0" style="-fx-background-color: #405B7A; -fx-background-insets: 0;" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="120.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="182.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints prefHeight="70.0" valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints prefHeight="70.0" valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints prefHeight="70.0" valignment="CENTER" vgrow="ALWAYS" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="107.0" text="Iterations" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="iterationCount" alignment="CENTER" focusTraversable="false" maxWidth="45.0" prefHeight="25.0" prefWidth="40.0" text="9" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="43.0" layoutY="10.0" prefHeight="35.0" prefWidth="107.0" text="Antialiasing" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="shouldUseAntialiasing" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label alignment="CENTER_RIGHT" layoutX="16.0" layoutY="34.0" prefHeight="35.0" prefWidth="107.0" text="Scale" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="scale" alignment="CENTER" focusTraversable="false" maxWidth="60.0" prefHeight="27.0" prefWidth="60.0" text="0.03" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="generateButton" defaultButton="true" minHeight="30.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="136.0" style="-fx-background-radius: 10;" text="Generate" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+         <HBox.margin>
+            <Insets left="20.0" top="25.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

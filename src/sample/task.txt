@@ -1,0 +1,21 @@
+Task 8
+Implement the L-system representing the growth of the plant (Fractal plant) for the following
+
+parameters:
+Symbols: X F + - [ ]
+Initial word w=X
+
+rules:
+P1 : X -> F+[[X]-X]-F[-FX]+X
+P2: F -> FF
++ and – rotation by 25o
+[ - push
+] – pop
+F – go forward and draw line
+X – auxiliary symbol
+
+Initial values:
+X=0, y=0
+Alfa = 25o
+w0=X
+generate wn , where n – numer of iterations

@@ -1,0 +1,101 @@
+.label {
+    -fx-font-family: "Montserrat";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+}
+
+.list-view .label {
+    -fx-text-fill: #212E3B;
+}
+
+.list-view .button {
+    -fx-text-fill: white;
+    -fx-font-family: "Montserrat";
+    -fx-font-weight: bold;
+    -fx-font-size: 8px;
+}
+
+.list-view {
+    -fx-background-color: #E1E4E8;
+}
+
+.list-view:focused {
+    -fx-background-insets: 0;
+}
+
+.list-view .cell {
+    -fx-background-color: #E1E4E8;
+}
+
+.pane {
+    -fx-background-color: #2c3946;
+}
+
+.check-box {
+    -fx-background-color: #E1E4E8;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #212E3B;
+    -fx-border-width: 3px;
+}
+
+.check-box .box {
+    -fx-background-color: #E1E4E8;
+    -fx-padding: 0 3 0 3;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #E1E4E8;
+}
+
+.check-box:hover .box {
+    -fx-background-color: #eceff3;
+}
+
+.text-field {
+    -fx-background-color: #E1E4E8;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #212E3B;
+    -fx-border-width: 3;
+}
+
+.text-field:hover {
+    -fx-background-color: #eceff3;
+}
+
+.text-field:selected, .text-field:focused {
+    -fx-border-width: 3;
+    -fx-background-radius: 3px;
+    -fx-background-insets: 3;
+}
+
+.title {
+    -fx-font-family: "Century Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: #f5507f;
+    -fx-font-family: "Century Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.button:hover {
+    -fx-background-color: #ff538b;
+}
+
+.button:pressed {
+    -fx-background-color: #e24482;
+}
+
+.menu-button .label {
+    -fx-font-family: "Century Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #212E3B;
+}
